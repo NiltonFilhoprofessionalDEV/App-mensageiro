@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Alinha os itens em pé (vertical) */
+    justify-content: space-between; /* Empurra o header para o topo e o footer para a base */
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8d8e8;
+    background-image: url(img/mi-min-pkpqoBp11Jc-unsplash.jpg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+/* Estilo para o Título lá no topo */
+h1 {
+    color: #f33356;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #fc0227;
+    box-shadow: 0em 0px 4em 0px #fc0227;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 5rem; /* Espaço do topo da tela */
+    font-size: 1.8rem;
+    /* Removi o box-shadow e o fundo branco daqui para ficar flutuando no fundo rosa */
+}
+
+.card {
+    background: white;
+    padding: 2.5rem; /* Aumentei um pouco o espaço interno */
+    border-radius: 20px;
+    box-shadow: 0em 0px 4em 0px #fc0227;
+    text-align: center;
+    max-width: 80%;
+    width: 400px;
+    z-index: 10;
+    border: 2px solid #fc0227;
+    /* O card fica centralizado automaticamente pelo flexbox do body */
+}
+
+/* Estilo para o Footer lá no final */
+footer {
+    margin-bottom: 2rem; /* Espaço da base da tela */
+    color: #d63384;
+    font-weight: 500;
+    z-index: 10;
+}
+
+/* O restante do seu código permanece igual */
+.icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#mensagem {
+    font-size: 1.2rem;
+    color: #d63384;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+button {
+    background-color: #ff99a8;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background-color: #f7002d;
+    transform: scale(1.05);
+}
+
+.background-hearts {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: radial-gradient(#f73051 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.3;
+}
